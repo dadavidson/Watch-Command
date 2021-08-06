@@ -8,4 +8,4 @@ The `Watch-Command` is a PowerShell semi-equivalent of the respective Linux Watc
 # Uninstall
 - Run `.\uninstall.ps1`
 
-![](example-watch.gif)
+![](img/example-watch.gif)
