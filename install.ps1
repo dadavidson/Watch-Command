@@ -1,6 +1,6 @@
 ﻿# install.ps1
 
 $modulename = 'Watch-Command'
-mkdir $env:PSModulePath\$modulename
-Copy-Item -Recurse -Path Watch-Command\Watch-Command -Destination $env:PSModulePath\$modulename -Confirm
+mkdir $HOME\Documents\WindowsPowerShell\Modules\$modulename -Force
+Copy-Item -Recurse -Path .\Watch-Command\Watch-Command.psm1 -Destination $HOME\Documents\WindowsPowerShell\Modules\$modulename -Force
 Import-Module Watch-Command
