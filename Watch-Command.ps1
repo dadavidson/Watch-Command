@@ -24,7 +24,7 @@ Watch-Command -Command 'Get-Content file.txt' -Interval 5
 This example referencing the paramters will run Get-Content every 5.0s.
 
 .LINK
-
+https://github.com/danieldavidson/Watch-Command
 
 .NOTES
 Written by: Daniel Davidson
