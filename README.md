@@ -5,4 +5,4 @@ The `Watch-Command` is a PowerShell semi-equivalent of the respective Linux Watc
 1. Clone this repo: `git clone https://github.com/danieldavidson/Watch-Command.git`
 2. Import the function: `Import-Module Watch-Command.ps1`
 
-![Watch-Command gif](watch-command.gif)
+![Watch-Command gif](install-watch-command.gif)
