@@ -71,7 +71,7 @@ function Watch-Command {
   )
 
   process {
-    if ($Interval -eq $null)
+    if (($Interval -eq $null) -or ($Interval -eq 0))
     {
         $Interval = 2
     }
