@@ -57,7 +57,7 @@ Change Log
 V1.00, 2021-08-06, Initial build.
 #>
 
-$Interval = 2
+
 function Watch-Command {
   [CmdletBinding()]
   param (
@@ -71,6 +71,10 @@ function Watch-Command {
   )
 
   process {
+    if ($Interval -eq $null)
+    {
+        $Interval = 2
+    }
     $cmd = [scriptblock]::Create($Command);
     while ($true) {
       Clear-Host;
