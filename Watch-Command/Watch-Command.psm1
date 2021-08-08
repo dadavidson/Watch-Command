@@ -56,6 +56,8 @@ SOFTWARE.
 Change Log
 V1.00, 2021-08-06, Initial build.
 #>
+
+$Interval = 2
 function Watch-Command {
   [CmdletBinding()]
   param (
@@ -72,7 +74,7 @@ function Watch-Command {
     $cmd = [scriptblock]::Create($Command);
     while ($true) {
       Clear-Host;
-      Write-Host "Every $interval.0s: $Command";
+      Write-Host "Every $Interval.0s: $Command";
       $cmd.Invoke();
       Start-Sleep $Interval;
     }
